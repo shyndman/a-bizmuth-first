@@ -11,6 +11,10 @@ else
   puts "else"
 end
 
+# instanceof
+puts "\nINSTANCE OF"
+puts "\"string\".is_a? String : #{"this is a string".is_a? String}"
+
 # ranges
 puts "\nRANGES"
 puts (1..10).include? 5
@@ -48,3 +52,15 @@ puts "\nFOR LOOP"
 (1..4).each do |i|
   puts i
 end
+
+# functions
+puts "\nFUNCTIONS"
+def fib i
+  if i == 0 || i == 1
+    1
+  else 
+    fib(i - 1) + fib(i - 2)
+  end
+end
+
+puts fib 6 # note no parens (optional if unambiguous)
