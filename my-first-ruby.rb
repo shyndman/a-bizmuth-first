@@ -16,6 +16,7 @@ puts "\nRANGES"
 puts (1..10).include? 5
 
 # hashes
+puts "\nHASHES"
 some_hash = {
   "Scott" => "Hyndman",
   "Michael" => "Higginson"
